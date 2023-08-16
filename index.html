@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- ====== HEADER ======-->
     <header class="header">
       <div class="header-container container">
         <nav class="header-nav">
@@ -50,6 +51,7 @@
             </li>
           </ul>
         </address>
+        <!-- ====== MOBILE MENU ======-->
         <button
           class="mobile-open-btn js-open-menu"
           type="button"
@@ -66,7 +68,6 @@
           </svg>
         </button>
 
-        <!-- ====== MOBILE MENU ======-->
         <div class="mobile-menu-container js-menu-container" id="mobile-menu">
           <button
             class="close-btn menu-toggle js-close-menu"
@@ -196,7 +197,9 @@
         <!-- ====== /MOBILE MENU ======-->
       </div>
     </header>
+    <!-- ====== /HEADER ======-->
     <main>
+      <!-- ====== HERO ======-->
       <section class="hero-section hero-bgr-image">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -205,6 +208,8 @@
           </button>
         </div>
       </section>
+      <!-- ====== /HERO ======-->
+      <!-- ====== BENEFITS ======-->
       <section class="benefits-section section">
         <div class="container">
           <h2 class="visually-hidden">Benefits hidden</h2>
@@ -280,6 +285,8 @@
           </ul>
         </div>
       </section>
+      <!-- ====== /BENEFITS ======-->
+      <!-- ====== PRODUCTION ======-->
       <section class="production-section section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
@@ -320,13 +327,19 @@
           </ul>
         </div>
       </section>
-      <!--  <section class="team-section section">
+      <!-- ====== /PRODUCTION ======-->
+      <!-- ====== TEAM ======-->
+      <section class="team-section section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-list-item">
               <img
-                src="./images/our-team/Mark_Guerrero_1.jpg"
+                srcset="
+                  ./images/our-team/Mark_Guerrero_1_@1x_264.jpg 1x,
+                  ./images/our-team/Mark_Guerrero_1_@2x_264.jpg 2x
+                "
+                src="./images/our-team/Mark_Guerrero_1_@1x_264.jpg"
                 alt="Mark-Guerrero-Product-Designer"
                 width="264"
               />
@@ -411,7 +424,11 @@
             </li>
             <li class="team-list-item">
               <img
-                src="./images/our-team/Tom_Ford_2.jpg"
+                srcset="
+                  ./images/our-team/Tom_Ford_2_@1x_264.jpg 1x,
+                  ./images/our-team/Tom_Ford_2_@2x_264.jpg 2x
+                "
+                src="./images/our-team/Tom_Ford_2_@1x_264.jpg"
                 alt="Tom-Ford-Frontend-Developer"
                 width="264"
               />
@@ -496,7 +513,11 @@
             </li>
             <li class="team-list-item">
               <img
-                src="./images/our-team/Camila_Garcia_3.jpg"
+                srcset="
+                  ./images/our-team/Camila_Garcia_3_@1x_264.jpg 1x,
+                  ./images/our-team/Camila_Garcia_3_@2x_264.jpg 2x
+                "
+                src="./images/our-team/Camila_Garcia_3_@1x_264.jpg"
                 alt="Camila-Garcia-Marketing"
                 width="264"
               />
@@ -581,7 +602,11 @@
             </li>
             <li class="team-list-item">
               <img
-                src="./images/our-team/Daniel_Wilson_4.jpg"
+                srcset="
+                  ./images/our-team/Daniel_Wilson_4_@1x_264.jpg 1x,
+                  ./images/our-team/Daniel_Wilson_4_@2x_264.jpg 2x
+                "
+                src="./images/our-team/Daniel_Wilson_4_@1x_264.jpg"
                 alt="Daniel-Wilson-UI-Designer"
                 width="264"
               />
@@ -667,8 +692,10 @@
           </ul>
         </div>
       </section>
+      <!-- ====== /TEAM ======-->
+      <!-- ====== CUSTOMERS ======-->
       <section class="customers-section section">
-        <div class="container">
+        <div class="container customers-container">
           <h2 class="section-title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
@@ -775,10 +802,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+      <!-- ====== /CUSTOMERS ======-->
     </main>
     <!--====== FOOTER ======-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
         <div class="footer-logo-wrap">
           <a class="logo link" href="./index.html"
@@ -880,6 +908,7 @@
             </label>
             <button
               class="footer-subsribe-btn primary-btn button"
+              name="subscribe-button"
               type="submit"
             >
               Subscribe
@@ -895,7 +924,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <!--====== /FOOTER ======-->
     <!--====== MODAL WINDOW ======-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
@@ -1006,5 +1036,6 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+    <!-- /Mobile Menu script-->
   </body>
 </html>
