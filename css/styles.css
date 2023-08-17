@@ -440,19 +440,23 @@ footer .logo-accent-text {
 
 .benefits-section {
   padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1158px) {
   .benefits-section {
     padding-top: 120px;
+    padding-bottom: 0;
   }
 }
+
 
 @media screen and (min-width: 768px) {
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: 72px;
     column-gap: 24px;
   }
 }
@@ -463,8 +467,11 @@ footer .logo-accent-text {
   }
 }
 
-.benefits-list-item:not(:last-child) {
+
+@media screen and (max-width: 767px) {
+  .benefits-list-item:not(:last-child) {
   margin-bottom: 72px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -480,9 +487,7 @@ footer .logo-accent-text {
     column-gap: 8px;
     flex-basis: calc((100% - 3 * 24px) / 4);
   }
-  .benefits-list-item:not(:last-child) {
-    margin-bottom: 0px;
-  }
+
 }
 
 .benefits-icon-wrap {
@@ -544,6 +549,12 @@ footer .logo-accent-text {
 @media screen and (max-width: 1157px) {
   .production-section {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .production-section {
+    padding-bottom: 120px;
   }
 }
 
@@ -669,7 +680,7 @@ footer .logo-accent-text {
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .customers-container {
-    width: 552px;
+    width: 584px;
   }
 }
 
@@ -890,7 +901,7 @@ justify-content: center;
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-container {
-    width: 552px;
+    width: 584px;
     display: flex;
     flex-wrap: wrap;
     text-align: start;
@@ -1344,6 +1355,17 @@ justify-content: center;
   margin-top: 40px;
 }
 
+@media screen and (max-width: 427px){
+  .mobile-contacts-phone {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.11;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      color: var(--primary-brand-color);
+    }
+}
+@media screen and (min-width: 428px) and (max-width: 767px){
 .mobile-contacts-phone {
   font-size: 36px;
   font-weight: 700;
@@ -1352,7 +1374,7 @@ justify-content: center;
   text-transform: capitalize;
   color: var(--primary-brand-color);
 }
-
+}
 .mobile-contacts-link {
   font-size: 20px;
   line-height: 1.2;
